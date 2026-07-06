@@ -19,7 +19,7 @@ FROM mvdan/shfmt:v3.2.2 as shfmt
 FROM accurics/terrascan:2d1374b as terrascan
 FROM hadolint/hadolint:latest-alpine as dockerfile-lint
 FROM ghcr.io/assignuser/lintr-lib:0.2.0 as lintr-lib
-FROM ghcr.io/assignuser/chktex-alpine:0.1.1 as chktex
+FROM ghcr.io/assignuser/chktex-alpine:v0.2.0 as chktex
 FROM garethr/kubeval:0.15.0 as kubeval
 
 ##################
